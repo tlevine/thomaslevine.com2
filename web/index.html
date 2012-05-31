@@ -12,8 +12,9 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
-  <meta name="description" content="">
+  <title>Thomas Levine</title>
+  <meta name="description" content="Thomas Levine's card">
+  <meta name="author" content="Thomas Levine">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
@@ -21,6 +22,9 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Web fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -37,7 +41,6 @@
 
   </header>
   <div role="main">
-
   </div>
   <footer>
 
@@ -55,13 +58,17 @@
   <script src="js/script.js"></script>
   <!-- end scripts -->
 
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  <!-- Piwik --> 
+  <script type="text/javascript">
+  var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.thomaslevine.com/" : "http://piwik.thomaslevine.com/");
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script><script type="text/javascript">
+  try {
+  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+  piwikTracker.trackPageView();
+  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script><noscript><p><img src="http://piwik.thomaslevine.com/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+  <!-- End Piwik Tracking Code -->
 </body>
 </html>
