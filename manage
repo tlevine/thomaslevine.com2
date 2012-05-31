@@ -1,8 +1,14 @@
 #!/bin/sh
 
 watch() {
-cd web
 coffee -w -o js coffee &
+http-server
 }
 
-nohup watch
+publish() {
+}
+
+(
+cd web
+watch
+)
