@@ -3,7 +3,7 @@ converter = new Markdown.Converter
 
 # Load the header
 header = (className) ->
-  classNames = ['hat', 'card']
+  classNames = ['home', 'whitepaper']
   if className in classNames
     $('header').toggleClass(className, 500)
   else
