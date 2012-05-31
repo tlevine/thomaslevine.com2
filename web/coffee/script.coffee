@@ -1,10 +1,10 @@
-/* Author:
-
-*/
-
-
-
-
+# Global
 converter = new Markdown.Converter
-$.get "/whitepapers/middle-names/index.md" (markdown_text) -> 
-  $("#main").html(converter.makeHtml(markdown_text))
+
+whitepaper = (slug, callback) ->
+  $.get("/whitepapers/#{slug}/index.md", (markdown_text) ->
+    $("#main").html(converter.makeHtml(markdown_text))
+    callback())
+
+$ ->
+  whitepaper('middle-names')

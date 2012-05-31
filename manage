@@ -6,6 +6,7 @@ http-server
 }
 
 publish() {
+sleep 0
 }
 
 (
