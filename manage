@@ -1,0 +1,8 @@
+#!/bin/sh
+
+watch() {
+cd web
+coffee -w -o js coffee &
+}
+
+nohup watch
